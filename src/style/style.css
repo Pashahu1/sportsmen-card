@@ -1,3 +1,67 @@
 @import "./reset/reset.css";
+.people {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  padding: 100px 0;
+  width: 1000px;
+}
+.people--center {
+  margin: 0 auto;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+  padding: 5px;
+  width: 200px;
+  transition: 1s;
+}
+.person:hover {
+  width: 220px;
+  margin-right: 0px;
+  border-radius: 12px;
+  background-color: #eee;
+  transform: scale(1.1);
+}
+
+.extra {
+  visibility: hidden;
+  color: black;
+}
+
+.rank {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  padding: 7px;
+  color: #8b0000;
+  background-color: white;
+  border-radius: 32px;
+  transform: translate(155px, -120px);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2f4f4f;
+}
+
+.person:hover img {
+  transition: 1s;
+  border-radius: 60px;
+}
+
+.person:hover .extra {
+  transition: 1s;
+  visibility: visible;
+}
 
 /*# sourceMappingURL=style.css.map */
